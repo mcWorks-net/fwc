@@ -2222,10 +2222,6 @@ ul {
   display: none !important;
 }
 
-.tns-nav {
-  display: none;
-}
-
 .theDream .theDream__wrapper {
   display: grid;
   grid-template-columns: repeat(3,1fr);
@@ -2247,8 +2243,62 @@ ul {
 
 .theDream .cardContent i {
   font-size: 2rem;
+  margin-bottom: 1rem;
 }
 
 .theDream h3 {
   font-size: 25px;
+}
+
+.theDream {
+  background-color: #dddddd;
+}
+
+.color-primary {
+  color: #87181b;
+}
+
+.partners ul li img {
+  width: 200px;
+}
+
+.partners ul {
+  justify-content: space-between;
+}
+@media screen and (max-width: 780px) {
+  .theDream .theDream__wrapper {
+    grid-template-columns: 1fr;
+  }
+  .theDream__card {
+    margin: 2rem 0;
+  }
+  .events .events__wrapper {
+    grid-template-columns: 1fr;
+  }
+}
+@media screen and (max-width: 580px) {
+  .partners ul {
+    flex-direction: column;
+    margin: 0 auto;
+  }
+  .partners ul li {
+    margin: 0 auto;
+  }
+  .partners ul li img {
+    margin: 1rem;
+  }
+}
+
+.pdy--10r {
+  padding: 5rem 0;
+}
+.tns-nav button {
+  position: absolute;
+  width: 2rem;
+  height: 0.3rem;
+  border:  1px solid #87181a;
+  left: 10%;
+}
+.tns-nav button.tns-nav-active {
+   background-color: #333333;
 }
