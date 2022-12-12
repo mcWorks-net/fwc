@@ -2292,13 +2292,32 @@ ul {
 .pdy--10r {
   padding: 5rem 0;
 }
-.tns-nav button {
+.tns-nav  {
   position: absolute;
-  width: 2rem;
+ 
   height: 0.3rem;
-  border:  1px solid #87181a;
-  left: 10%;
+  margin-left:  10%;
+  margin-left: auto;
+  margin-right: auto;
+  bottom: 0;
+  top: 90%;  
+  left: 50%; 
+  transform: translate(-50%, -50%);
 }
+
 .tns-nav button.tns-nav-active {
    background-color: #333333;
+}
+
+.tns-nav button {
+  width: 2rem;
+  border: 1px solid white;
+}
+
+.banner {
+  color: white;
+  min-height: 70vh;
+}
+.tns-outer {
+  position: relative;
 }
