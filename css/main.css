@@ -112,6 +112,7 @@ body {
   color: #2b2b2b;
   font: 16px/24px tex_gyre_adventorregular, Helvetica, sans-serif;
   overflow: hidden;
+  position: relative;
 }
 
 table {
@@ -1343,7 +1344,7 @@ li > a:only-child:after {
   width: 265px;
 }
 #message {
-  background-color: #ddd;
+  /* background-color: #ddd; */
   padding: 10vh 0;
 }
 
@@ -2163,6 +2164,7 @@ ul {
 
 .events .events__item {
   box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  background-color: white;
 }
 
 .events .events__item {
@@ -2250,9 +2252,6 @@ ul {
   font-size: 25px;
 }
 
-.theDream {
-  background-color: #dddddd;
-}
 
 .color-primary {
   color: #87181b;
@@ -2294,7 +2293,6 @@ ul {
 }
 .tns-nav  {
   position: absolute;
- 
   height: 0.3rem;
   margin-left:  10%;
   margin-left: auto;
@@ -2302,22 +2300,75 @@ ul {
   bottom: 0;
   top: 90%;  
   left: 50%; 
-  transform: translate(-50%, -50%);
+  transform: translate(-1100%, -900%);
+  z-index: 1;
 }
 
 .tns-nav button.tns-nav-active {
-   background-color: #333333;
+   background-color: #6bbf36;
 }
 
 .tns-nav button {
-  width: 2rem;
+  width: 0.5rem;
   border: 1px solid white;
+  height: 0.5rem;
+  border-radius: 16px;
+  margin-right: 3px;
 }
 
 .banner {
   color: white;
-  min-height: 70vh;
+  min-height: 466px;
 }
 .tns-outer {
   position: relative;
+}
+
+.tns-outer::after {
+  content: "";
+  position: absolute;
+  background-image: url('http://frontlineworshipcenter.org/wp-content/uploads/2022/12/bannerbottomcover-1.png');
+  width: 100%;
+  background-size: 94%;
+  background-position-y: bottom;
+  height: 100%;
+  bottom: 0;
+  background-repeat: repeat-x;
+}
+
+
+.btnImNew {
+  position: absolute;
+  z-index: 1;
+  bottom: 0;
+  right: 0;
+  border: 1px solid yellow;
+  padding: 1rem;
+  background-color: white;
+  z-index: 1;
+}
+.btnImNew .theBtn {
+  position: absolute;
+  left: -5rem;
+  transform: rotate(-90deg);
+}
+
+
+.bottomborder-inherit {
+  position: absolute;
+  bottom: 0;
+  width: inherit;
+}
+
+.bottomborder {
+  position: absolute;
+  bottom: 0;
+  width: inherit;
+}
+#message {
+  position: relative;
+}
+
+.events {
+  background-color: #dddddd !important;
 }
